@@ -28,7 +28,7 @@ Repas
 
 Eveil et jeux
 Hochets, Anneaux de dentition
-Jeux sensorielsaurelie.boudart@gmail.com
+Jeux sensoriels
 Jeux éducatifs, Jeux de société, Puzzles
 Jouets en bois
 Jeux d'imitation
