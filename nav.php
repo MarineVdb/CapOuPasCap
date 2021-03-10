@@ -4,10 +4,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand d-inline d-lg-none " href="#">Menu</a>
+
+            <div class="d-md-none navbar-brand input-group rounded col-8 col-md-5 order-md-2 mt-2 mb-2 mb-lg-0 d-flex">
+                    <input class="form-control  rounded" type="search" placeholder="Que recherchez vous ?" aria-label="Search">
+                    <button class="input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
+                </div>  
+            <!--<a class="navbar-brand d-inline d-lg-none " href="#">Menu</a>-->
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill mb-2 w-100">
                 
                 <!-- Marques -->
                 <li class="nav-item dropdown">

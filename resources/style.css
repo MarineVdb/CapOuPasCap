@@ -1,0 +1,10 @@
+.animation {
+    background-image: url("../resources/img/fille.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+.valeur-custom {
+    width: 70px;
+    height : 70px;
+}

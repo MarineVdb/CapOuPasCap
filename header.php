@@ -15,7 +15,6 @@
 
 
 <body>
-
     <header class="container-fluid">
             <div class="row d-flex align-items-center justify-content-around">
 
@@ -42,8 +41,8 @@
                 
                 <!--Barre de recherche -->
                 <div class=" input-group rounded col-11 col-md-5 order-md-2 mt-2 mb-2 mb-lg-0 d-flex">
-                    <input class="form-control mr-sm-2 rounded" id="searchBar" type="search" placeholder="Que recherchez-vous ?" aria-label="Search">
-                    <button class="input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
+                    <input class=" d-none d-md-block form-control mr-sm-2 rounded" id="searchBar" type="search" placeholder="Que recherchez-vous ?" aria-label="Search">
+                    <button class=" d-none d-md-inline input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
                 </div>  
         </div> 
     </header>

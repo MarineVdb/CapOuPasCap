@@ -1,12 +1,20 @@
 <?php include 'header.php';?>
 <?php include 'nav.php';?>
 
-<div class="container-fluid">
+<div class="container" >
 
- <!-- Ajouter ici le contenu de la Home Page -->
+<p> C'est le content !
+</p>
+<!--
+    <div class="row animation mt-3">
 
- <p> Bienvenue sur le site de Cap Ou Pas Cap </p>
- 
+    Laissez place aux rêves ! 
+        <img class="img-fluid" src="resources/img/fille.jpg" alt="Logo" id="logo">
+
+    <div>
+-->
+</div>
+
 </div>
 
 <?php include 'footer.php';?>
