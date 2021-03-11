@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang=fr>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cap Ou Pas Cap</title>
-    <!-- Lien pour utiliser Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Lien vers  FontAwesome qui permet d'intégrer des icones du site (balises <i>) -->
-    <script src="https://kit.fontawesome.com/d097384257.js" crossorigin="anonymous"></script>
-    <!-- Lien vers  style.css pour surcharger Bootstrap -->
-    <link rel="stylesheet" href="resources/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cap Ou Pas Cap</title>
+        <!-- Lien pour utiliser Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Lien vers  FontAwesome qui permet d'intégrer des icones du site (balises <i>) -->
+        <script src="https://kit.fontawesome.com/d097384257.js" crossorigin="anonymous"></script>
+        <!-- Lien vers  style.css pour surcharger Bootstrap -->
+        <link rel="stylesheet" href="resources/style.css">
+    </head>
 
 
 <body>
@@ -44,7 +44,7 @@
                     <input class=" d-none d-md-block form-control mr-sm-2 rounded" id="searchBar" type="search" placeholder="Que recherchez-vous ?" aria-label="Search">
                     <button class=" d-none d-md-inline input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
                 </div>  
-        </div> 
+            </div> 
     </header>
           
        

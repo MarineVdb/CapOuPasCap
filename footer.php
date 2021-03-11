@@ -1,4 +1,4 @@
-<div id="footer" class="container-fluid">
+        <div id="footer" class="container-fluid">
             <!-- Reseaux sociaux sur mobile uniquement -->
             <div class="row text-center mb-2 bg-light">
                 <div class="col-12 d-md-none">
@@ -10,15 +10,15 @@
             </div>
 
             <!-- Valeurs -->
-            <div class="row bg-light  d-flex justify-content-around p-2">
-                <div class="d-block"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2">Confiance</p></div>
-                <div class="d-block"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2">Créativité</p></div>
-                <div class="d-block"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2">Engagement</p></div>
-                <div class="d-block"> <img src="resources/img/decouverte.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2">Découverte</p></div>
+            <div class="row bg-light d-flex justify-content-around p-2 mt-3">
+                <div class="col-6 col-md-3 d-block"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2">Confiance</p></div>
+                <div class="col-6 col-md-3 d-block"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2">Créativité</p></div>
+                <div class="col-6 col-md-3 d-block"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2">Engagement</p></div>
+                <div class="col-6 col-md-3 d-block"> <img src="resources/img/decouverte.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2">Découverte</p></div>
             </div>
 
             <!-- Mentions -->
-            <div class="row d-flex justify-content-around pt-2 ">
+            <div class="row d-flex justify-content-around pt-3 ">
                 <!-- A propos -->
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
@@ -61,13 +61,13 @@
                 </div>
 
                 <!-- Reseaux sociaux Desktop -->
-                <div class="col-12 col-md-2 d-none d-md-inline-block border text-center bg-light align-self-center mb-5">
+                <div class="col-12 col-md-2 d-none d-md-inline-block border text-center bg-light align-self-center mb-5 rounded">
                     <p>Suivez-nous</p>
                     <i class="fab fa-instagram-square fa-4x mb-2"></i>
                     <i class="fab fa-facebook-square fa-4x"></i>
                 </div>
             </div>
-</div>
+        </div>
         
         <!-- Liens vers le JS de Bootstrap pour utiliser Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,10 +1,19 @@
 .animation {
     background-image: url("../resources/img/fille.jpg");
     background-size: cover;
-    height: 500px;
+    background-position: bottom -150px right 0px;
+    height: 400px;
+}
+
+.pattern {
+    background-image: url("../resources/img/pattern.jpg");
+    background-size: repeat;
+    height: 400px;
+
 }
 
 .valeur-custom {
     width: 70px;
     height : 70px;
 }
+
