@@ -11,10 +11,16 @@
         <script src="https://kit.fontawesome.com/d097384257.js" crossorigin="anonymous"></script>
         <!-- Lien vers  style.css pour surcharger Bootstrap -->
         <link rel="stylesheet" href="resources/style.css">
+         <!-- Lien vers font Sen -->
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+         <!-- Lien vers font fantaisie -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sen&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     </head>
 
 
-<body>
+<body class="border">
     <header class="container-fluid">
             <div class="row d-flex align-items-center justify-content-around">
 
@@ -26,15 +32,15 @@
                 <!--Icones utilisateur et panier -->
                 <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center">
                     <figure class= "mt-3 ml-4 ml-lg-0 mr-2 mr-lg-0">
-                    <i class="fas fa-map-marker-alt fa-2x "></i>
+                    <i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i>
                     <figcaption class="figure-caption d-none d-lg-inline">Magasin</figcaption> 
                     </figure>
                     <figure class="mt-3 mr-2 mr-lg-0">
-                    <i class="far fa-user fa-2x"></i> 
+                    <i class="far fa-user fa-2x" style="color:#006f86"></i> 
                     <figcaption class="figure-caption d-none d-lg-inline">Compte</figcaption> 
                     </figure>
                     <figure class="mt-3">
-                    <i class="fas fa-shopping-cart fa-2x"></i> 
+                    <i class="fas fa-shopping-cart fa-2x" style="color:#006f86"></i> 
                     <figcaption class="figure-caption d-none d-lg-inline-block">Panier (0)</figcaption> 
                     </figure>
                 </div>

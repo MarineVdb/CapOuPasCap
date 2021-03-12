@@ -1,24 +1,23 @@
         <div id="footer" class="container-fluid">
             <!-- Reseaux sociaux sur mobile uniquement -->
-            <div class="row text-center mb-2 bg-light">
+            <div class="row text-center mt-4 mb-2 bg-light">
                 <div class="col-12 d-md-none">
-                <p class="d-inline">Suivez-nous</p>
-                <i class="fab fa-instagram-square d-inline"></i>
-                <i class="fab fa-facebook-square d-inline"></i>
+                <p class="d-inline reseaux col-6">Suivez-nous</p>
+                <i class="col-3 fab fa-instagram-square d-inline fa-2x"></i>
+                <i class="col-3 fab fa-facebook-square d-inline fa-2x"></i>
                 </div>
-
             </div>
 
             <!-- Valeurs -->
-            <div class="row bg-light d-flex justify-content-around p-2 mt-3">
-                <div class="col-6 col-md-3 d-block"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2">Confiance</p></div>
-                <div class="col-6 col-md-3 d-block"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2">Créativité</p></div>
-                <div class="col-6 col-md-3 d-block"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2">Engagement</p></div>
-                <div class="col-6 col-md-3 d-block"> <img src="resources/img/decouverte.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2">Découverte</p></div>
+            <div class="row bg-light p-2 mt-4 text-center">
+                <div class="col-6 col-md-3"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2 valeur">Confiance</p></div>
+                <div class="col-6 col-md-3"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2 valeur">Créativité</p></div>
+                <div class="col-6 col-md-3"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2 valeur">Engagement</p></div>
+                <div class="col-6 col-md-3"> <img src="resources/img/decouverte1.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2 valeur">Découverte</p></div>
             </div>
 
             <!-- Mentions -->
-            <div class="row d-flex justify-content-around pt-3 ">
+            <div class="row d-flex justify-content-around pt-3 mt-4 ">
                 <!-- A propos -->
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
@@ -61,8 +60,8 @@
                 </div>
 
                 <!-- Reseaux sociaux Desktop -->
-                <div class="col-12 col-md-2 d-none d-md-inline-block border text-center bg-light align-self-center mb-5 rounded">
-                    <p>Suivez-nous</p>
+                <div class="col-12 col-md-2 d-none d-md-inline-block text-center align-self-center mb-5 rounded background-reseaux">
+                    <p class="reseaux-desk">Suivez-nous</p>
                     <i class="fab fa-instagram-square fa-4x mb-2"></i>
                     <i class="fab fa-facebook-square fa-4x"></i>
                 </div>
