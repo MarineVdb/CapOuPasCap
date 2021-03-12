@@ -12,12 +12,24 @@ CREATE TABLE Utilisateur(
 	code_postal VARCHAR(100)	
 );
 
+CREATE TABLE Taille_vetement(
+	taille_vetement_id CHAR PRIMARY KEY NOT NULL DEFAULT 'M',
+	nom VARCHAR(100) NOT NULL
+);	
+
+CREATE TABLE Marque(
+	marque_id INT PRIMARY KEY NOT NULL,
+	nom VARCHAR(100) NOT NULL,
+	description TEXT
+);
+
 CREATE TABLE Categorie(
 	categorie_id INT PRIMARY KEY NOT NULL,
 	nom VARCHAR(100) NOT NULL,
 	categorie INT,
 	FOREIGN KEY (categorie) REFERENCES Categorie(categorie_id)
 );
+
 
 CREATE TABLE Produit(
 	produit_id INT PRIMARY KEY NOT NULL,
@@ -39,10 +51,6 @@ CREATE TABLE Produit(
 	FOREIGN KEY (taille_vetement) REFERENCES Taille_vetement(taille_vetement_id)
 );
 
-CREATE TABLE Taille_vetement(
-	taille_vetement_id CHAR PRIMARY KEY NOT NULL DEFAULT 'M',
-	nom VARCHAR(100) NOT NULL
-);	
 
 CREATE TABLE Photo(
 	photo_id INT PRIMARY KEY NOT NULL,
@@ -53,11 +61,6 @@ CREATE TABLE Photo(
 	FOREIGN KEY (produit) REFERENCES Produit(produit_id)
 );
 
-CREATE TABLE Marque(
-	marque_id INT PRIMARY KEY NOT NULL,
-	nom VARCHAR(100) NOT NULL,
-	description TEXT
-);
 
 CREATE TABLE Commande_entete(
 	commande_entete_id INT PRIMARY KEY NOT NULL,
@@ -77,4 +80,5 @@ CREATE TABLE Commande_detail(
 	FOREIGN KEY (commande_entete) REFERENCES Commande(commande_id),
 	FOREIGN KEY (produit) REFERENCES Produit(produit_id)
 );
+
 
