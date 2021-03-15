@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 
-/* Animation commerciale desktop */
+/* Grande animation commerciale desktop */
 .animation {
     background-image: url("../resources/img/fille.jpg");
     background-size: cover;
@@ -13,7 +13,7 @@ body {
     font-family: 'Sue Ellen Francisco', cursive;
 }
 
-/* Animation commercial mobile */
+/* Grande animation commercial mobile */
 .animation-mobile {
     background-image: url("../resources/img/fille.jpg");
     background-size: cover;
@@ -22,17 +22,23 @@ body {
     font-family: 'Sue Ellen Francisco', cursive;
 }
 
+/*Titre grande animation commerciale*/
 h1 {
     font-size : 300%;
 }
 
-
 /* Pattern petites animations commerciales*/
 .pattern {
-    background-image: url("../resources/img/pattern.jpg");
+    background-image: url("../resources/img/pattern1.jpg");
     background-size: repeat;
     height: 400px;
 }
+
+.caption {
+    color: #303030;
+    font-size: 1rem;
+}
+
 
 /* Valeurs */
 .valeur-custom {
@@ -40,10 +46,14 @@ h1 {
     height: 70px;
 }
 
+.valeurs-bg {
+    background-color:#fde6e3;
+}
+
 /*Suivez-nous mobile*/
 .reseaux {
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size : 2rem;
+    font-size : 1.5rem;
 }
 
 /*Suivez-nous desktop*/
@@ -53,17 +63,23 @@ h1 {
 }
 
 .background-reseaux {
-    background-color: #f7e3b9;
+    background-color: #f7e7c5;
+}
+
+.heart {
+    height: 30px;
+    width:30px;
 }
 
 /*Bouton Voir nos marques*/
 .bouton {
-    background-color: #ffd8d2;
+    background-color: #aadfef ;
     border: none;
 }
 
 .bouton:hover {
-    background-color: #aadfef;
+    background-color:#ffd8d277;
+    color: lightslategrey;
 }
 
 .valeur {

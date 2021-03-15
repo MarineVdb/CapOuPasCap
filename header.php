@@ -32,7 +32,7 @@
                 <!--Icones utilisateur et panier -->
                 <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center">
                     <figure class= "mt-3 ml-4 ml-lg-0 mr-2 mr-lg-0">
-                    <i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i>
+                    <a href="https://goo.gl/maps/21fXbepTs7dPLHo27" target="_blank"><i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i></a>
                     <figcaption class="figure-caption d-none d-lg-inline">Magasin</figcaption> 
                     </figure>
                     <figure class="mt-3 mr-2 mr-lg-0">

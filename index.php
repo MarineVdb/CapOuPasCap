@@ -17,22 +17,22 @@
 
                     <figure class= "p-2 col-6 col-md-2  text-center">
                         <img class="p-2 img-responsive col-12 col-md-10" src="resources/img/izipizi.jpg" alt="Sophie la giraffe">
-                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left">> Protégez bébé du soleil</figcaption> </a>
+                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> Protégez bébé du soleil</figcaption> </a>
                     </figure>
 
                     <figure class= "p-2 col-6 col-md-2 text-center">
                         <img class="p-2 img-responsive col-12 col-md-10" src="resources/img/liberty.png" alt="Sophie la giraffe">
-                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left">> La folie du liberty</figcaption></a> 
+                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> La folie du liberty</figcaption></a> 
                     </figure>
 
                     <figure class= "p-2 col-6 col-md-2 text-center">
                         <img class="p-2 img-responsive col-12 col-md-10" src="resources/img/poupee.jpg" alt="Sophie la giraffe">
-                        <a href="/"><figcaption class="figure-caption d-sblock bg-white text-left">> Des poupées pour tout le monde</figcaption></a> 
+                        <a href="/"><figcaption class="figure-caption d-sblock bg-white text-left caption">> Des poupées pour tout le monde</figcaption></a> 
                     </figure>
 
                     <figure class= "p-2 col-6 col-md-2 text-center">
                         <img class="p-2 img-responsive col-12 col-md-10" src="resources/img/bebe.jpg" alt="Sophie la giraffe">
-                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left">> Préparez l'arrivée de bébé</figcaption></a>
+                        <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> Préparez l'arrivée de bébé</figcaption></a>
                     </figure>
             </div> 
 
@@ -51,7 +51,7 @@
             </div>
             
             <div class="row justify-content-center mt-4 mb-2">
-            <a class="btn btn-secondary bouton" href="#" role="button">Voir toutes nos marques</a>
+            <a class="btn btn-secondary btn-lg bouton" href="#" role="button">Voir toutes nos marques</a>
             </div>
 
 

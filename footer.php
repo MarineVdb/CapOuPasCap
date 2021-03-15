@@ -1,15 +1,15 @@
         <div id="footer" class="container-fluid">
             <!-- Reseaux sociaux sur mobile uniquement -->
-            <div class="row text-center mt-4 mb-2 bg-light">
-                <div class="col-12 d-md-none">
-                <p class="d-inline reseaux col-6">Suivez-nous</p>
-                <i class="col-3 fab fa-instagram-square d-inline fa-2x"></i>
-                <i class="col-3 fab fa-facebook-square d-inline fa-2x"></i>
+            <div class="row text-center mt-4 mb-2 background-reseaux">
+                <div class="col-12 d-md-none d-flex align-items-center ">
+                <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"> </p>
+                <a href="https://www.instagram.com/capoupascapkids/"><i class="col-3 fab fa-instagram-square d-inline fa-3x" style="color:#303030"></i></a>
+                <a href="https://www.facebook.com/capoupascapkids/"><i class="col-3 fab fa-facebook-square  d-inline fa-3x" style="color:#303030"></i></a>
                 </div>
             </div>
 
             <!-- Valeurs -->
-            <div class="row bg-light p-2 mt-4 text-center">
+            <div class="row p-2 mt-4 text-center valeurs-bg">
                 <div class="col-6 col-md-3"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2 valeur">Confiance</p></div>
                 <div class="col-6 col-md-3"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2 valeur">Créativité</p></div>
                 <div class="col-6 col-md-3"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2 valeur">Engagement</p></div>
@@ -60,13 +60,19 @@
                 </div>
 
                 <!-- Reseaux sociaux Desktop -->
-                <div class="col-12 col-md-2 d-none d-md-inline-block text-center align-self-center mb-5 rounded background-reseaux">
-                    <p class="reseaux-desk">Suivez-nous</p>
-                    <i class="fab fa-instagram-square fa-4x mb-2"></i>
-                    <i class="fab fa-facebook-square fa-4x"></i>
+                <div class="col-12 col-md-2 d-none d-md-inline-block text-center align-self-center mb-5 rounded bg-white">
+                    <p class="reseaux-desk">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"></p>
+                    <a href="https://www.instagram.com/capoupascapkids/"><i class="fab fa-instagram-square fa-4x mb-2" style="color:#aadfef"></i></a>
+                    <a href="https://www.facebook.com/capoupascapkids/"><i class="fab fa-facebook-square fa-4x" style="color:#aadfef"></i></a>
                 </div>
             </div>
         </div>
+
+    </div>
+
+        <!--Accordéon sur mobile -->
+        <!-- A AJOUTER -->
+                
         
         <!-- Liens vers le JS de Bootstrap pour utiliser Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
