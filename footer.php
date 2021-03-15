@@ -62,8 +62,8 @@
                 <!-- Reseaux sociaux Desktop -->
                 <div class="col-12 col-md-2 d-none d-md-inline-block text-center align-self-center mb-5 rounded bg-white">
                     <p class="reseaux-desk">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"></p>
-                    <a href="https://www.instagram.com/capoupascapkids/"><i class="fab fa-instagram-square fa-4x mb-2" style="color:#aadfef"></i></a>
-                    <a href="https://www.facebook.com/capoupascapkids/"><i class="fab fa-facebook-square fa-4x" style="color:#aadfef"></i></a>
+                    <a href="https://www.instagram.com/capoupascapkids/" target="_blank"><i class="fab fa-instagram-square fa-4x mb-2" style="color:#aadfef"></i></a>
+                    <a href="https://www.facebook.com/capoupascapkids/" target="_blank"><i class="fab fa-facebook-square fa-4x" style="color:#aadfef"></i></a>
                 </div>
             </div>
         </div>

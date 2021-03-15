@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 -- Base de données : `copc`
 --
 
+CREATE DATABASE IF NOT EXISTS `copc;
+
 -- --------------------------------------------------------
 
 --
@@ -34,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `categorie` (
   `categorie` int(11) DEFAULT NULL,
   PRIMARY KEY (`categorie_id`),
   KEY `categorie` (`categorie`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -52,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `commande_detail` (
   PRIMARY KEY (`commande_detail_id`),
   KEY `commande_entete` (`commande_entete`),
   KEY `produit` (`produit`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -67,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `commande_entete` (
   `utilisateur` int(11) DEFAULT NULL,
   PRIMARY KEY (`commande_entete_id`),
   KEY `utilisateur` (`utilisateur`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -81,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `marque` (
   `nom` varchar(100) NOT NULL,
   `description` text,
   PRIMARY KEY (`marque_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -98,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `photo` (
   `produit` int(11) DEFAULT NULL,
   PRIMARY KEY (`photo_id`),
   KEY `produit` (`produit`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -126,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `produit` (
   KEY `categorie` (`categorie`),
   KEY `marque` (`marque`),
   KEY `taille_vetement` (`taille_vetement`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -139,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `taille_vetement` (
   `taille_vetement_id` char(1) NOT NULL DEFAULT 'M',
   `nom` varchar(100) NOT NULL,
   PRIMARY KEY (`taille_vetement_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -162,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `code_postal` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`utilisateur_id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

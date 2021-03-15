@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang=fr>
     <head>
@@ -20,43 +21,36 @@
     </head>
 
 
-<body class="border">
+<body>
     <header class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-around">
+        <div class="row d-flex align-items-center justify-content-around">
 
-                <!--Logo -->
-                <div class="col-6 col-md-3">
-                    <img class="img-fluid" src="resources/img/logo.jpg" alt="Logo" id="logo">
-                </div>
+            <!--Logo -->
+            <div class="col-6 col-md-3">
+                <a href="index.php"><img class="img-fluid" src="resources/img/logo.jpg" alt="Logo" id="logo"></a>
+            </div>
 
-                <!--Icones utilisateur et panier -->
-                <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center">
-                    <figure class= "mt-3 ml-4 ml-lg-0 mr-2 mr-lg-0">
-                    <a href="https://goo.gl/maps/21fXbepTs7dPLHo27" target="_blank"><i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i></a>
-                    <figcaption class="figure-caption d-none d-lg-inline">Magasin</figcaption> 
-                    </figure>
-                    <figure class="mt-3 mr-2 mr-lg-0">
-                    <i class="far fa-user fa-2x" style="color:#006f86"></i> 
-                    <figcaption class="figure-caption d-none d-lg-inline">Compte</figcaption> 
-                    </figure>
-                    <figure class="mt-3">
-                    <i class="fas fa-shopping-cart fa-2x" style="color:#006f86"></i> 
-                    <figcaption class="figure-caption d-none d-lg-inline-block">Panier (0)</figcaption> 
-                    </figure>
-                </div>
-                
-                <!--Barre de recherche -->
-                <div class=" input-group rounded col-11 col-md-5 order-md-2 mt-2 mb-2 mb-lg-0 d-flex">
-                    <input class=" d-none d-md-block form-control mr-sm-2 rounded" id="searchBar" type="search" placeholder="Que recherchez-vous ?" aria-label="Search">
-                    <button class=" d-none d-md-inline input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
-                </div>  
-            </div> 
+            <!--Icones utilisateur et panier -->
+            <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center">
+                <figure class= "mt-3 ml-4 ml-lg-0 mr-2 mr-lg-0">
+                <a href="https://goo.gl/maps/21fXbepTs7dPLHo27" target="_blank"><i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i></a>
+                <figcaption class="figure-caption d-none d-lg-inline">Magasin</figcaption> 
+                </figure>
+                <figure class="mt-3 mr-2 mr-lg-0">
+                <a href="connexion.php"><i class="far fa-user fa-2x" style="color:#006f86"></i></a> 
+                <figcaption class="figure-caption d-none d-lg-inline">Compte</figcaption> 
+                </figure>
+                <figure class="mt-3">
+                <i class="fas fa-shopping-cart fa-2x" style="color:#006f86"></i> 
+                <figcaption class="figure-caption d-none d-lg-inline-block">Panier (0)</figcaption> 
+                </figure>
+            </div>
+            
+            <!--Barre de recherche -->
+            <div class=" input-group rounded col-11 col-md-5 order-md-2 mt-2 mb-2 mb-lg-0 d-flex">
+                <input class=" d-none d-md-block form-control mr-sm-2 rounded" id="searchBar" type="search" placeholder="Que recherchez-vous ?" aria-label="Search">
+                <button class=" d-none d-md-inline input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>
+            </div>  
+        </div> 
     </header>
-          
-       
-
-        
-
-    
-
-    
+    <?php include('nav.php');?>
