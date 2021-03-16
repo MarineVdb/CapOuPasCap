@@ -63,7 +63,7 @@ h1 {
 }
 
 .background-reseaux {
-    background-color: #f7e7c5;
+    background-color: white;
 }
 
 .heart {
@@ -71,14 +71,14 @@ h1 {
     width:30px;
 }
 
-/*Bouton Voir nos marques*/
+/*Boutons*/
 .bouton {
     background-color: #aadfef ;
     border: none;
 }
 
 .bouton:hover {
-    background-color:#ffd8d277;
+    background-color:#fde6e3;
     color: lightslategrey;
 }
 

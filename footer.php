@@ -1,10 +1,10 @@
         <div id="footer" class="container-fluid">
             <!-- Reseaux sociaux sur mobile uniquement -->
-            <div class="row text-center mt-4 mb-2 background-reseaux">
-                <div class="col-12 d-md-none d-flex align-items-center ">
+            <div class="row text-center mt-4 mb-2  ">
+                <div class="col-12 d-md-none d-flex align-items-center border ">
                 <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"> </p>
-                <a href="https://www.instagram.com/capoupascapkids/"><i class="col-3 fab fa-instagram-square d-inline fa-3x" style="color:#303030"></i></a>
-                <a href="https://www.facebook.com/capoupascapkids/"><i class="col-3 fab fa-facebook-square  d-inline fa-3x" style="color:#303030"></i></a>
+                <a href="https://www.instagram.com/capoupascapkids/"><i class="col-3 fab fa-instagram-square d-inline fa-3x" style="color:#aadfef"></i></a>
+                <a href="https://www.facebook.com/capoupascapkids/"><i class="col-3 fab fa-facebook-square  d-inline fa-3x" style="color:#aadfef"></i></a>
                 </div>
             </div>
 
@@ -75,8 +75,10 @@
                 
         
         <!-- Liens vers le JS de Bootstrap pour utiliser Bootstrap -->
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     </body>
 </html>

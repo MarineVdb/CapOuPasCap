@@ -31,18 +31,18 @@
             </div>
 
             <!--Icones utilisateur et panier -->
-            <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center">
+            <div class="col-6 col-md-2 order-md-3 d-flex p-0 text-center d-flex justify-content-around">
                 <figure class= "mt-3 ml-4 ml-lg-0 mr-2 mr-lg-0">
                 <a href="https://goo.gl/maps/21fXbepTs7dPLHo27" target="_blank"><i class="fas fa-map-marker-alt fa-2x" style="color:#006f86"></i></a>
-                <figcaption class="figure-caption d-none d-lg-inline">Magasin</figcaption> 
+                <figcaption class="figure-caption d-none d-lg-block">Magasin</figcaption> 
                 </figure>
                 <figure class="mt-3 mr-2 mr-lg-0">
-                <a href="connexion.php"><i class="far fa-user fa-2x" style="color:#006f86"></i></a> 
-                <figcaption class="figure-caption d-none d-lg-inline">Compte</figcaption> 
+                <a href="compte.php"><i class="far fa-user fa-2x" style="color:#006f86"></i></a> 
+                <figcaption class="figure-caption d-none d-lg-block">Compte</figcaption> 
                 </figure>
                 <figure class="mt-3">
                 <i class="fas fa-shopping-cart fa-2x" style="color:#006f86"></i> 
-                <figcaption class="figure-caption d-none d-lg-inline-block">Panier (0)</figcaption> 
+                <figcaption class="figure-caption d-none d-lg-block">Panier (0)</figcaption> 
                 </figure>
             </div>
             
