@@ -40,7 +40,7 @@
                 $mdp = hash('sha256', $mdp);
                 
                 //On écrit les données dans la BDD 
-               /* $sql = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, email, `role`,  mot_de_passe, tel, adresse1, adresse2, localite, code_postal) VALUES (:nom, :prenom, :email, 'utilisateur', :mdp, :tel, :adresse1, :adresse2, :localite, :code_postal)"); 
+                $sql = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, email, `role`,  mot_de_passe, tel, adresse1, adresse2, localite, code_postal) VALUES (:nom, :prenom, :email, 'utilisateur', :mdp, :tel, :adresse1, :adresse2, :localite, :code_postal)"); 
                 $sql->bindParam("nom", $nom);
                 $sql->bindParam("prenom", $prenom);
                 $sql->bindParam("email", $email); 
@@ -50,7 +50,7 @@
                 $sql->bindParam("adresse2", $adresse2);
                 $sql->bindParam("localite", $localite);
                 $sql->bindParam("code_postal", $code_postal);
-                $sql->execute();     */
+                $sql->execute();    
 
                 //On autorise l'utilisateur à accéder au dashboard
                 header("Location:index.php");
