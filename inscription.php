@@ -12,6 +12,7 @@
         </div>
     <?php } ?>
         
+    
         <form action='compte.php' method='post' class="container col-12 col-md-12 pl-md-5" style="border-right: 1px solid #ddd;">
             <div class="mt-2">
                 <label for="nom" class="col-md-3">Nom *</label>
