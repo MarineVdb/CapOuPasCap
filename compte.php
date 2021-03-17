@@ -22,11 +22,11 @@ include 'header.php';?>
 
           <div class="panel panel-default">
 
-            <div class="panel-heading d-flex justify-content-center bg-light">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="text-decoration:none; color:#303030">
-              <h3 class=" text-center col-6 d-inline pb-1"> Inscription </h3>
-              <span class="col-6"><i class="fas fa-chevron-down fa-2x pt-1" style="color:#303030"></i></span>
-            </a>
+            <div class="panel-heading d-flex justify-content-center bg-light" onclick='chevron()'>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="text-decoration:none; color:#303030"  >
+                <h3 class=" text-center col-6 d-inline pb-1"> Inscription </h3>
+                <span class="col-6" id="chevron"><i class="fas fa-chevron-down fa-2x pt-1" style="color:#303030"></i></span>
+              </a>
               
             </div>
 
