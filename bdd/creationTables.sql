@@ -1,5 +1,5 @@
 CREATE TABLE Utilisateur(
-	utilisateur_id INT PRIMARY KEY NOT NULL,
+	utilisateur_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100),
 	prenom VARCHAR(100),
 	email VARCHAR(100) UNIQUE NOT NULL,
@@ -13,18 +13,18 @@ CREATE TABLE Utilisateur(
 );
 
 CREATE TABLE Taille_vetement(
-	taille_vetement_id CHAR PRIMARY KEY NOT NULL DEFAULT 'M',
-	nom VARCHAR(100) NOT NULL
+	taille_vetement_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nom VARCHAR(100) NOT NULL DEFAULT 'M'
 );	
 
 CREATE TABLE Marque(
-	marque_id INT PRIMARY KEY NOT NULL,
+	marque_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	description TEXT
 );
 
 CREATE TABLE Categorie(
-	categorie_id INT PRIMARY KEY NOT NULL,
+	categorie_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	categorie INT,
 	FOREIGN KEY (categorie) REFERENCES Categorie(categorie_id)
@@ -32,7 +32,7 @@ CREATE TABLE Categorie(
 
 
 CREATE TABLE Produit(
-	produit_id INT PRIMARY KEY NOT NULL,
+	produit_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	description TEXT,
 	prix FLOAT DEFAULT '0',
@@ -45,7 +45,7 @@ CREATE TABLE Produit(
 	solde_pourcentage INT DEFAULT '0',
 	categorie INT,
 	marque INT,
-	taille_vetement CHAR ,
+	taille_vetement INT,
 	FOREIGN KEY (categorie) REFERENCES Categorie(categorie_id),
 	FOREIGN KEY (marque) REFERENCES Marque(marque_id),
 	FOREIGN KEY (taille_vetement) REFERENCES Taille_vetement(taille_vetement_id)
@@ -53,7 +53,7 @@ CREATE TABLE Produit(
 
 
 CREATE TABLE Photo(
-	photo_id INT PRIMARY KEY NOT NULL,
+	photo_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	image VARCHAR(100) NOT NULL,
 	description TEXT,
 	ordre INT,
@@ -63,7 +63,7 @@ CREATE TABLE Photo(
 
 
 CREATE TABLE Commande_entete(
-	commande_entete_id INT PRIMARY KEY NOT NULL,
+	commande_entete_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	date_creation DATETIME NOT NULL,
         utilisateur INT, 
 	FOREIGN KEY (utilisateur) REFERENCES Utilisateur(utilisateur_id)
@@ -72,12 +72,12 @@ CREATE TABLE Commande_entete(
 
 
 CREATE TABLE Commande_detail(
-	commande_detail_id INT PRIMARY KEY NOT NULL,
+	commande_detail_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	quantite INT NOT NULL,
 	prix FLOAT NOT NULL,
 	commande_entete INT,
 	produit INT,
-	FOREIGN KEY (commande_entete) REFERENCES Commande(commande_id),
+	FOREIGN KEY (commande_entete) REFERENCES Commande_entete(commande_entete_id),
 	FOREIGN KEY (produit) REFERENCES Produit(produit_id)
 );
 
