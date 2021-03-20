@@ -2,7 +2,7 @@
             <!-- Reseaux sociaux sur mobile uniquement -->
             <div class="row text-center mt-4 mb-2">
                 <div class="col-12 d-md-none d-flex align-items-center bg-suivez-mobile ">
-                <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="src/img/heart.png" alt="Coeur"> </p>
+                <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="img/heart.png" alt="Coeur"> </p>
                 <a href="https://www.instagram.com/capoupascapkids/"><i class="col-3 fab fa-instagram-square d-inline fa-3x" style="color:#aadfef"></i></a>
                 <a href="https://www.facebook.com/capoupascapkids/"><i class="col-3 fab fa-facebook-square  d-inline fa-3x" style="color:#aadfef"></i></a>
                 </div>
