@@ -11,7 +11,7 @@
         <!-- Lien vers  FontAwesome qui permet d'intégrer des icones du site (balises <i>) -->
         <script src="https://kit.fontawesome.com/d097384257.js" crossorigin="anonymous"></script>
         <!-- Lien vers  style.css pour surcharger Bootstrap -->
-        <link rel="stylesheet" href="resources/style.css">
+        <link rel="stylesheet" href="../src/style.css">
          <!-- Lien vers font Sen -->
          <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 
             <!--Logo -->
             <div class="col-6 col-md-3">
-                <a href="index.php"><img class="img-fluid" src="resources/img/logo.jpg" alt="Logo" id="logo"></a>
+                <a href="index.php"><img class="img-fluid" src="../src/img/logo.jpg" alt="Logo" id="logo"></a>
             </div>
 
             <!--Icones utilisateur et panier -->

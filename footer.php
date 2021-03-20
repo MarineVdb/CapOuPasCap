@@ -2,7 +2,7 @@
             <!-- Reseaux sociaux sur mobile uniquement -->
             <div class="row text-center mt-4 mb-2">
                 <div class="col-12 d-md-none d-flex align-items-center bg-suivez-mobile ">
-                <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"> </p>
+                <p class="d-inline reseaux col-6 mt-2">Suivez-nous <img  class="heart d-inline" src="src/img/heart.png" alt="Coeur"> </p>
                 <a href="https://www.instagram.com/capoupascapkids/"><i class="col-3 fab fa-instagram-square d-inline fa-3x" style="color:#aadfef"></i></a>
                 <a href="https://www.facebook.com/capoupascapkids/"><i class="col-3 fab fa-facebook-square  d-inline fa-3x" style="color:#aadfef"></i></a>
                 </div>
@@ -10,10 +10,10 @@
 
             <!-- Valeurs -->
             <div class="row p-2 mt-4 text-center valeurs-bg">
-                <div class="col-6 col-md-3"> <img src="resources/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2 valeur">Confiance</p></div>
-                <div class="col-6 col-md-3"> <img src="resources/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2 valeur">Créativité</p></div>
-                <div class="col-6 col-md-3"> <img src="resources/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2 valeur">Engagement</p></div>
-                <div class="col-6 col-md-3"> <img src="resources/img/decouverte1.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2 valeur">Découverte</p></div>
+                <div class="col-6 col-md-3"> <img src="../src/img/confiance.jpg" class="rounded-circle valeur-custom" alt="Confiance"> <p class="d-inline pl-2 valeur">Confiance</p></div>
+                <div class="col-6 col-md-3"> <img src="../src/img/creativite.jpg" class="rounded-circle valeur-custom" alt="Creativité"> <p class="d-inline pl-2 valeur">Créativité</p></div>
+                <div class="col-6 col-md-3"> <img src="../src/img/engagement.jpg" class="rounded-circle valeur-custom" alt="Engagement"><p class="d-inline pl-2 valeur">Engagement</p></div>
+                <div class="col-6 col-md-3"> <img src="../src/img/decouverte1.jpg" class="rounded-circle valeur-custom" alt="Decouverte"><p class="d-inline pl-2 valeur">Découverte</p></div>
             </div>
 
             <!-- Mentions -->
@@ -61,7 +61,7 @@
 
                 <!-- Reseaux sociaux Desktop -->
                 <div class="col-12 col-md-2 d-none d-md-inline-block text-center align-self-center mb-5 rounded bg-white">
-                    <p class="reseaux-desk">Suivez-nous <img  class="heart d-inline" src="resources/img/heart.png" alt="Coeur"></p>
+                    <p class="reseaux-desk">Suivez-nous <img  class="heart d-inline" src="../src/img/heart.png" alt="Coeur"></p>
                     <a href="https://www.instagram.com/capoupascapkids/" target="_blank"><i class="fab fa-instagram-square fa-4x mb-2" style="color:#aadfef"></i></a>
                     <a href="https://www.facebook.com/capoupascapkids/" target="_blank"><i class="fab fa-facebook-square fa-4x" style="color:#aadfef"></i></a>
                 </div>

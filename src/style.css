@@ -6,7 +6,7 @@ body {
 
 /* Grande animation commerciale desktop */
 .animation {
-    background-image: url("../resources/img/fille.jpg");
+    background-image: url("../src/img/fille.jpg");
     background-size: cover;
     background-position: bottom -150px right 0px;
     height: 400px;
@@ -15,7 +15,7 @@ body {
 
 /* Grande animation commercial mobile */
 .animation-mobile {
-    background-image: url("../resources/img/fille.jpg");
+    background-image: url("../src/img/fille.jpg");
     background-size: cover;
     background-position: bottom 0 right -250px;
     height: 400px;
@@ -29,7 +29,7 @@ h1 {
 
 /* Pattern petites animations commerciales*/
 .pattern {
-    background-image: url("../resources/img/pattern1.jpg");
+    background-image: url("../src/img/pattern1.jpg");
     background-size: repeat;
     height: 400px;
 }
@@ -57,7 +57,7 @@ h1 {
 }
 
 .bg-suivez-mobile {
-    background-image: url("../resources/img/vanilla.jpg");
+    background-image: url("../src/img/vanilla.jpg");
 }
 
 /*Suivez-nous desktop*/

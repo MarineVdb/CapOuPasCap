@@ -24,7 +24,7 @@
         if(!empty($nom) && !empty($prenom) && !empty($email) && !empty($mdp)){
 
             //Si les champs ne sont pas vides, on se connecte à la BDD
-            include ('bdd/connexionBdd.php');
+            include ('../src/connexionBdd.php');
 
             //On vérifie si le mail est existant dans la BDD
             //J'écris ma requête (PDO)

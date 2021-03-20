@@ -1,6 +1,6 @@
 <?php include 'inscription_verif.php';
 include 'connexion_verif.php';
-include 'header.php';?> 
+include '../header.php';?> 
 
 
 <!-- DESK -->
@@ -41,4 +41,4 @@ include 'header.php';?>
 
 </div>
 
-<?php include 'footer.php';?>
+<?php include '../footer.php';?>

@@ -10,7 +10,7 @@
         //Si les champs ne sont pas vides :
         if(!empty($mail) && !empty($password)){
             //Je me connecte à la BDD 
-            include 'bdd/connexionBdd.php';
+            include '../src/connexionBdd.php';
 
             //Je decrypte le mot de passe 
             $password = hash('sha256', $password);

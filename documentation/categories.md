@@ -15,8 +15,9 @@ Marques
 
 Catégories et sous-catégories
 Marques
+
 Puériculture (ou les essentiels de bébé)
-Linge de lit
+7-Linge de lit
 Tétines et attache-tétines
 Sorties de bain
 Protége-carnets de santé
@@ -24,7 +25,7 @@ Bavoirs et Langes
 Couvertures, plaids
 Toilette et soins de bébé
 Sacs à langer, Sacs week end
-Repas
+16- Repas
 
 Eveil et jeux
 Hochets, Anneaux de dentition
@@ -39,7 +40,7 @@ Poupées, Poupons
 Instruments de musique
 Livres
 Porteurs, Chariots et bascules
-Draisiennes, Tricycles
+29-Draisiennes, Tricycles
 
 Peluches et Doudous
 
