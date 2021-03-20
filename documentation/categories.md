@@ -3,12 +3,12 @@ Catégories
 7 catégories :
 
 Marques
-Puériculture (ou les essentiels de bébé)
-Eveil et jeux
-Peluches et doudous
-Décoration
-Mode et accessoires
-Cadeaux à personnaliser
+1-Puériculture (ou les essentiels de bébé)
+2-Eveil et jeux
+3-Peluches et doudous
+4-Décoration
+5-Mode et accessoires
+6-Cadeaux à personnaliser
 + 1 lien vers fiche produit carte cadeau (physique, traitée comme un produit ) dans la navigation
 
 >> donc 8 entrées au total dans la navigation principale
