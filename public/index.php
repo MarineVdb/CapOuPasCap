@@ -1,4 +1,4 @@
-<?php include '../header.php';?> 
+<?php require_once '../header.php';?> 
 
 <div class="container-fluid" >
     <!-- Grande animation commerciale sur Desktop -->
@@ -56,4 +56,4 @@
 
 </div>
 
-<?php include '../footer.php';?>
+<?php require_once '../footer.php';?>

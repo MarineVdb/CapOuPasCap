@@ -1,22 +1,22 @@
-<?php include 'inscription_verif.php';
-include 'connexion_verif.php';
-include '../header.php';?> 
+<?php require_once 'inscription_verif.php';
+require_once 'connexion_verif.php';
+require_once '../header.php';?> 
 
 
 <!-- DESK -->
 <div class="row col-12 d-none d-md-flex">
     <div class="container col-6">
-        <?php include 'inscription.php';?> 
+        <?php require_once 'inscription.php';?> 
     </div>
     <div class="container col-6 d-flex align-items-center">
-        <?php include 'connexion.php';?> 
+        <?php require_once 'connexion.php';?> 
     </div>
 </div>
 
 
 <!-- MOBILE (Accordéon)-->
 <div class="bs-example d-md-none col-12">
-<?php include('connexion.php');?>
+<?php require_once('connexion.php');?>
 
     <div class="panel-group " id="accordion">
 
@@ -32,7 +32,7 @@ include '../header.php';?>
 
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
-                  <?php include('inscription.php');?>
+                  <?php require_once('inscription.php');?>
               </div>
             </div>
           </div>
@@ -41,4 +41,4 @@ include '../header.php';?>
 
 </div>
 
-<?php include '../footer.php';?>
+<?php require_once '../footer.php';?>

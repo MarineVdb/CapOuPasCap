@@ -1,10 +1,10 @@
-<?php include '../header.php';?> 
+<?php require_once '../header.php';?> 
 
 
 <?php 
 if(isset($_GET) && isset($_GET['id'])){
     $id = intval($_GET['id']);
-    include '../src/connexionBdd.php';
+    require_once '../src/connexionBdd.php';
     $sql = "SELECT produit_id, nom, `description`, prix FROM produit WHERE produit_id='".$id."'" ;
     //J'envoie la requête à la BDD et je l'enregistre dans une variable
     $reponse = $bdd ->query($sql);
@@ -26,4 +26,4 @@ if(isset($_GET) && isset($_GET['id'])){
 
 ?>
 
-<?php include '../footer.php';?> 
+<?php require_once '../footer.php';?> 
