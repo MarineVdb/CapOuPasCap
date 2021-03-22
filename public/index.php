@@ -16,22 +16,22 @@
 
             <figure class= "p-2 col-6 col-md-2  text-center">
                 <img class="p-2 img-responsive col-12 col-md-10" src="img/izipizi.jpg" alt="Sophie la giraffe">
-                <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> Protégez bébé du soleil</figcaption> </a>
+                <a href="index.php"><figcaption class="figure-caption d-block bg-white text-left caption">> Protégez bébé du soleil</figcaption> </a>
             </figure>
 
             <figure class= "p-2 col-6 col-md-2 text-center">
                 <img class="p-2 img-responsive col-12 col-md-10" src="img/liberty.png" alt="Sophie la giraffe">
-                <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> La folie du liberty</figcaption></a> 
+                <a href="index.php"><figcaption class="figure-caption d-block bg-white text-left caption">> La folie du liberty</figcaption></a> 
             </figure>
 
             <figure class= "p-2 col-6 col-md-2 text-center">
                 <img class="p-2 img-responsive col-12 col-md-10" src="img/poupee.jpg" alt="Sophie la giraffe">
-                <a href="/"><figcaption class="figure-caption d-sblock bg-white text-left caption">> Des poupées pour tout le monde</figcaption></a> 
+                <a href="index.php"><figcaption class="figure-caption d-sblock bg-white text-left caption">> Des poupées pour tout le monde</figcaption></a> 
             </figure>
 
             <figure class= "p-2 col-6 col-md-2 text-center">
                 <img class="p-2 img-responsive col-12 col-md-10" src="img/bebe.jpg" alt="Sophie la giraffe">
-                <a href="/"><figcaption class="figure-caption d-block bg-white text-left caption">> Préparez l'arrivée de bébé</figcaption></a>
+                <a href="index.php"><figcaption class="figure-caption d-block bg-white text-left caption">> Préparez l'arrivée de bébé</figcaption></a>
             </figure>
     </div> 
 
@@ -39,14 +39,15 @@
     <!--Nos jolies Marques-->
     <h3 class="mt-4 text-center text-uppercase"> Nos jolies marques </h3>
     <div class="row d-flex justify-content-around mb-3">
-            <img class="col-3 col-md-1" src="img/sophie.png" alt="Sophie la giraffe">
-            <img class="col-3 col-md-1" src="img/buggy.png" alt="Mountaine Buggy">
-            <img class="col-3 col-md-1" src="img/biberon.png" alt="Le biberon français">
-            <img class="col-3 col-md-1" src="img/kidsme.png" alt="KidsMe">
-            <img class="col-3 col-md-1" src="img/moulin.png" alt="Moulin Roty">
-            <img class="col-3 col-md-1"  src="img/red.png" alt="Red Castle">
-            <img class="col-3 col-md-1" src="img/naty.png" alt="Naty">
-            <img class="col-3 col-md-1" src="img/doudou.png" alt="Doudou">
+            <a class="col-6 col-md-1" href="index.php"><img src="img/sophie.png" alt="Sophie la giraffe"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/buggy.png" alt="Mountaine Buggy"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/biberon.png" alt="Le biberon français"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/kidsme.png" alt="KidsMe"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/moulin.png" alt="Moulin Roty"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/red.png" alt="Red Castle"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/naty.png" alt="Naty"></a>
+            <a class="col-6 col-md-1" href="index.php"><img src="img/doudou.png" alt="Doudou"></a>
+
     </div>
     
     <div class="row justify-content-center mt-4 mb-2">
