@@ -2,7 +2,7 @@ insert into produit (produit_id, nom, description, prix, actif, quantite, dimens
 
 Livré avec une belle boîte cadeau, il sera un cadeau de naissance tout simplement parfait !', 29.90, true, 30, 10, null, 20, 0.3, 0, 3, 10, 10);
 
-insert into produit (produit_id, nom, description, prix, actif, quantite, dimension_largeur, dimension_longueur, dimension_hauteur, poids, solde_pourcentage, categorie, marque, taille_vetement) values (2, 'Poupon Gordis Imani', 'Minikane, ou l’art de « faire comme les grands » avec de jolies poussettes aux couleurs et motifs beaux et originaux. La poussette Minikane se décline en une multitude de thème Vintage, Art Deco, Pop ou Liberty... Les garçons n'hésiteront plus à suivre les filles pour des courses endiablées.
+insert into produit (produit_id, nom, description, prix, actif, quantite, dimension_largeur, dimension_longueur, dimension_hauteur, poids, solde_pourcentage, categorie, marque, taille_vetement) values (2, 'Poupon Gordis Imani', 'Minikane, ou l’art de « faire comme les grands » avec de jolies poussettes aux couleurs et motifs beaux et originaux. La poussette Minikane se décline en une multitude de thème Vintage, Art Deco, Pop ou Liberty... Les garçons n\' hésiteront plus à suivre les filles pour des courses endiablées.
 Minikane véhicule un esprit ludique, rigolo et coloré que l’on retrouve maintenant dans une collection de poupons et poupées à croquer en collaboration avec la jolie marque de poupons Gordis.
 
 
