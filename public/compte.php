@@ -6,17 +6,17 @@ require_once '../header.php';?>
 <!-- DESK -->
 <div class="row col-12 d-none d-md-flex">
     <div class="container col-6">
-        <?php require_once 'inscription.php';?> 
+        <?php require 'inscription.php';?> 
     </div>
     <div class="container col-6 d-flex align-items-center">
-        <?php require_once 'connexion.php';?> 
+        <?php require 'connexion.php';?> 
     </div>
 </div>
 
 
 <!-- MOBILE (Accordéon)-->
 <div class="bs-example d-md-none col-12">
-<?php require_once('connexion.php');?>
+<?php require 'connexion.php' ;?>
 
     <div class="panel-group " id="accordion">
 
@@ -32,7 +32,7 @@ require_once '../header.php';?>
 
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
-                  <?php require_once('inscription.php');?>
+                  <?php require 'inscription.php';?>
               </div>
             </div>
           </div>

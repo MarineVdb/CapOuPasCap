@@ -24,21 +24,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `taille_vetement`
---
-
-DROP TABLE IF EXISTS `taille_vetement`;
-CREATE TABLE IF NOT EXISTS `taille_vetement` (
-  `taille_vetement_id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'M',
-  PRIMARY KEY (`taille_vetement_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `taille_vetement`
---
-
 INSERT INTO `taille_vetement` (`taille_vetement_id`, `nom`) VALUES
 (1, 'XXS'),
 (2, 'XS'),
