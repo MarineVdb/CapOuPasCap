@@ -43,19 +43,45 @@ if(isset($_GET) && isset($_GET['id'])){
                 
                 <!-- Description du produit -->
                 <div class="col-12 col-md-6 pt-5">
-                    <h2> <?=$nom." - ".$marque?></h2>
-                  
-                    <p>
-                        <label for="quantite">Quantité</label>
-                        <input type="number" min="0" name="quantite">
-                    </p>
-                    <p><h2> <?=$prix." €"?> </h2></p>
+                    <h3 class="ml-3"> <?=$nom." - ".$marque?></h3>
 
+                    <select class="form-select ml-3 col-6 col-md-3 mt-3 mt-md-5" aria-label="Disabled select example" disabled>
+                        <option selected>Taille</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                    </select>
+
+                    <h2 class="ml-3 mt-3 mt-md-5" style="color:#006f86"> <?=$prix." €"?> </h2>
+                    
+                     <!--Quantité -->
+                    <label for="quantite" class="ml-3 mt-3">Quantité </label>    
+                    <div class="input-group mb-3 col-8 col-md-3">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick='subQty()'>-</button>
+                        <input type="text" class="form-control text-center" id="qty" placeholder="" aria-label="Example text with two button addons" value=1 name="quantite">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick='addQty()'>+</button>
+                    </div>
+
+                    <!--Ajouter au panier -->
                     <p class="text-center">
-                        <input type="button" name="ajouter" value="Ajouter au panier" class="btn btn-secondary btn-lg bouton">
+                        <input type="button" name="ajouter" value="Ajouter au panier" class="btn btn-secondary btn-lg bouton mt-3 mt-md-5 col-12" onclick='ajouterPanier()'>
                     </p>
 
-                    <p>
+                    <p id="ajoutPanier"></p>
+
+                    <!-- Partage -->
+                    <div class="text-center mt-5">
+                        <p style="font-family:'Sue Ellen Francisco', cursive; font-size:2rem;">Partagez-moi</p> 
+                        <!-- URL de partage à modifier -->
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><i class="fab fa-facebook-square fa-3x" style="color:#303030"></i></a>
+                        <a href="//pinterest.com/pin/create/link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"><i class="fab fa-pinterest-square fa-3x" style="color:#303030"></i></a>
+                        <a href="https://www.instagram.com/?url=https://www.drdrop.co/" target="_blank" rel="noopener"><i class="fab fa-instagram-square fa-3x" style="color:#303030"></i></a>
+                    </div>                 
+
+                </div>
+                <!--Nav détails et livraison-->
+                <div class="row">
+                <p class="mt-5">
                         <nav>
                             <div class="nav nav-tabs col-12" id="nav-tab" role="tablist">
                                 <button class="nav-link active col-4" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
@@ -63,6 +89,7 @@ if(isset($_GET) && isset($_GET['id'])){
                                 <button class="nav-link col-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Livraison</button>
                             </div>
                         </nav>
+
                         <div class="tab-content col-12" id="nav-tabContent" style="min-height:120px;">
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><?=$donnees['description']?></div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -74,18 +101,8 @@ if(isset($_GET) && isset($_GET['id'])){
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Le produit est à venir retirer en magasin</div>
-                        </div>
-                    </p>
-
-                    <div class="text-center mt-5">
-                        <p style="font-family:'Sue Ellen Francisco', cursive; font-size:2rem;">Partagez-moi</p> 
-                        <!-- URL de partage à modifier -->
-                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><i class="fab fa-facebook-square fa-3x" style="color:#303030"></i></a>
-                        <a href="//pinterest.com/pin/create/link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"><i class="fab fa-pinterest-square fa-3x" style="color:#303030"></i></a>
-                        <a href="https://www.instagram.com/?url=https://www.drdrop.co/" target="_blank" rel="noopener"><i class="fab fa-instagram-square fa-3x" style="color:#303030"></i></a>
-                    </div>
-
-                </div>
+                                </div>
+                 </p>
 
             </div>
         <?php    
