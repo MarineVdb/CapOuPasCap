@@ -14,10 +14,10 @@ function addQty() {
 }
 
 function subQty() {
-    if(document.getElementById("qty").value > 0) {
+    if(document.getElementById("qty").value > 1) {
         document.getElementById("qty").value = parseInt(document.getElementById("qty").value) - 1;
     } else {
-        document.getElementById("qty").value = 0;
+        document.getElementById("qty").value = 1;
     }
 }
 

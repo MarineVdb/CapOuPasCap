@@ -37,7 +37,7 @@ if(isset($_GET) && isset($_GET['id'])){
 
             <div class="row col-12">
                 <!-- Image du produit -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
                         <img src="<?= $image ?>" alt="Photo du produit" class="img-fluid">
                 </div>
                 
@@ -70,7 +70,7 @@ if(isset($_GET) && isset($_GET['id'])){
                     <p id="ajoutPanier"></p>
 
                     <!-- Partage -->
-                    <div class="text-center mt-5">
+                    <div class="text-center mt-3 mt-md-5">
                         <p style="font-family:'Sue Ellen Francisco', cursive; font-size:2rem;">Partagez-moi</p> 
                         <!-- URL de partage à modifier -->
                         <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><i class="fab fa-facebook-square fa-3x" style="color:#303030"></i></a>
@@ -80,30 +80,30 @@ if(isset($_GET) && isset($_GET['id'])){
 
                 </div>
                 <!--Nav détails et livraison-->
-                <div class="row">
-                <p class="mt-5">
-                        <nav>
-                            <div class="nav nav-tabs col-12" id="nav-tab" role="tablist">
-                                <button class="nav-link active col-4" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
-                                <button class="nav-link col-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Détails</button>
-                                <button class="nav-link col-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Livraison</button>
+                <div class="row w-100 mt-3 col-12 col-md-8 mx-auto">
+                    
+                            <nav class=" col-12 justify-content-center">
+                                <div class="nav nav-tabs col-12 ml-2" id="nav-tab" role="tablist">
+                                    <button class="nav-link active col-4" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                                    <button class="nav-link col-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Détails</button>
+                                    <button class="nav-link col-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Livraison</button>
+                                </div>
+                            </nav>
+
+                            <div class="tab-content col-12 justify-content-center" id="nav-tabContent" style="min-height:120px;">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><?=$donnees['description']?></div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <ul>
+                                                <li>Longueur : <?= $longueur.' cm'; ?> </li>
+                                                <li>Largeur : <?= $largeur.' cm'; ?> </li>
+                                                <li>Hauteur : <?= $hauteur.' cm'; ?> </li>
+                                                <li>Poids : <?= $poids.' kg'; ?> </li>
+                                            </ul>
+                                        </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Le produit est à venir retirer en magasin</div>
                             </div>
-                        </nav>
-
-                        <div class="tab-content col-12" id="nav-tabContent" style="min-height:120px;">
-                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><?=$donnees['description']?></div>
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                    <ul>
-                                        <li>Longueur : <?= $longueur.' cm'; ?> </li>
-                                        <li>Largeur : <?= $largeur.' cm'; ?> </li>
-                                        <li>Hauteur : <?= $hauteur.' cm'; ?> </li>
-                                        <li>Poids : <?= $poids.' kg'; ?> </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Le produit est à venir retirer en magasin</div>
-                                </div>
-                 </p>
-
+                   
+                </div>
             </div>
         <?php    
         } else {
