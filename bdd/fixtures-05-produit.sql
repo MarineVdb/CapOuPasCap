@@ -6,7 +6,7 @@ insert into produit (produit_id, nom, description, prix, actif, quantite, dimens
 Minikane véhicule un esprit ludique, rigolo et coloré que l’on retrouve maintenant dans une collection de poupons et poupées à croquer en collaboration avec la jolie marque de poupons Gordis.
 
 
-Matériaux : PVC souple et vêtements en coton', 69.00, false, 50, null, null, null, null, 0, 1, 25, null);
+Matériaux : PVC souple et vêtements en coton', 69.00, false, 50, null, null, null, null, 0, 1, 2, null);
 
 insert into produit (produit_id, nom, description, prix, actif, quantite, dimension_largeur, dimension_longueur, dimension_hauteur, poids, solde_pourcentage, categorie, marque, taille_vetement) values (3, 'Jeu de boulier et d'encastrement', 'Janod vous présente son magnifique jouet d'éveil Looping et Cie, un très beau boulier en bois parfait pour amuser les bébés dès l'âge de 1an.', 32.99, false, 30, 20, 30, 30, 2, 0, 20, 1, null);
 
