@@ -1,22 +1,24 @@
-<?php require_once 'inscription_verif.php';
-require_once 'connexion_verif.php';
-require_once '../header.php';?> 
+<?php 
+  require_once '../src/inscription_verif.php';
+  require_once '../src/connexion_verif.php';
+  require_once '../template/header.php';
+?> 
 
 
 <!-- DESK -->
 <div class="row col-12 d-none d-md-flex">
     <div class="container col-6">
-        <?php require 'inscription.php';?> 
+        <?php require '../src/inscription.php';?> 
     </div>
     <div class="container col-6 d-flex align-items-center">
-        <?php require 'connexion.php';?> 
+        <?php require '../src/connexion.php';?> 
     </div>
 </div>
 
 
 <!-- MOBILE (Accordéon)-->
 <div class="bs-example d-md-none col-12">
-<?php require 'connexion.php' ;?>
+<?php require '../src/connexion.php' ;?>
 
     <div class="panel-group " id="accordion">
 
@@ -32,7 +34,7 @@ require_once '../header.php';?>
 
             <div id="collapseTwo" class="panel-collapse collapse">
               <div class="panel-body">
-                  <?php require 'inscription.php';?>
+                  <?php require '../src/inscription.php';?>
               </div>
             </div>
           </div>
@@ -41,4 +43,6 @@ require_once '../header.php';?>
 
 </div>
 
-<?php require_once '../footer.php';?>
+<?php 
+  require_once '../template/footer.php';
+?>

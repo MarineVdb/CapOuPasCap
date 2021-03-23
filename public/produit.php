@@ -1,4 +1,6 @@
-<?php require_once '../header.php';?> 
+<?php 
+    require_once '../template/header.php';
+?> 
 
 <?php 
 if(isset($_GET) && isset($_GET['id'])){
@@ -124,4 +126,6 @@ if(isset($_GET) && isset($_GET['id'])){
 <?php } ?>
 
 
-<?php require_once '../footer.php';?> 
+<?php 
+    require_once '../template/footer.php';
+?> 

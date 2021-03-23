@@ -1,6 +1,6 @@
 <?php
 
-require_once '../header.php';
+require_once '../template/header.php';
 require_once '../src/connexionBdd.php';
 
 // id de la marque
@@ -36,4 +36,4 @@ endwhile;
 
 <?php
 
-require_once '../footer.php';
+require_once '../template/footer.php';

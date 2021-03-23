@@ -1,6 +1,6 @@
 <?php
 
-require_once 'src/connexionBdd.php';
+require_once '../src/connexionBdd.php';
 
 // liste des marques
 $sql = 'SELECT * FROM marque';
