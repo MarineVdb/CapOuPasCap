@@ -27,7 +27,7 @@ CREATE TABLE categorie(
 	categorie_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	categorie INT,
-	FOREIGN KEY (categorie) REFERENCES Categorie(categorie_id)
+	FOREIGN KEY (categorie) REFERENCES categorie(categorie_id)
 );
 
 
@@ -46,9 +46,9 @@ CREATE TABLE produit(
 	categorie INT,
 	marque INT,
 	taille_vetement INT,
-	FOREIGN KEY (categorie) REFERENCES Categorie(categorie_id),
-	FOREIGN KEY (marque) REFERENCES Marque(marque_id),
-	FOREIGN KEY (taille_vetement) REFERENCES Taille_vetement(taille_vetement_id)
+	FOREIGN KEY (categorie) REFERENCES categorie(categorie_id),
+	FOREIGN KEY (marque) REFERENCES marque(marque_id),
+	FOREIGN KEY (taille_vetement) REFERENCES taille_vetement(taille_vetement_id)
 );
 
 
@@ -58,7 +58,7 @@ CREATE TABLE photo(
 	description TEXT,
 	ordre INT,
 	produit INT,
-	FOREIGN KEY (produit) REFERENCES Produit(produit_id)
+	FOREIGN KEY (produit) REFERENCES produit(produit_id)
 );
 
 
@@ -66,7 +66,7 @@ CREATE TABLE commande_entete(
 	commande_entete_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	date_creation DATETIME NOT NULL,
         utilisateur INT, 
-	FOREIGN KEY (utilisateur) REFERENCES Utilisateur(utilisateur_id)
+	FOREIGN KEY (utilisateur) REFERENCES utilisateur(utilisateur_id)
 );
 
 
@@ -77,8 +77,8 @@ CREATE TABLE commande_detail(
 	prix FLOAT NOT NULL,
 	commande_entete INT,
 	produit INT,
-	FOREIGN KEY (commande_entete) REFERENCES Commande_entete(commande_entete_id),
-	FOREIGN KEY (produit) REFERENCES Produit(produit_id)
+	FOREIGN KEY (commande_entete) REFERENCES commande_entete(commande_entete_id),
+	FOREIGN KEY (produit) REFERENCES produit(produit_id)
 );
 
 
