@@ -128,4 +128,3 @@ if(isset($_GET) && isset($_GET['id'])){
 
 <?php 
     require_once '../template/footer.php';
-?> 

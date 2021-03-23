@@ -32,5 +32,5 @@
             $erreurConnexion = "Tous les champs doivent être complétés";
         } 
     }
-?>
+
     
