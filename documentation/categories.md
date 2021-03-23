@@ -27,7 +27,7 @@ Toilette et soins de bébé
 Sacs à langer, Sacs week end
 16- Repas
 
-Eveil et jeux
+2-Eveil et jeux
 Hochets, Anneaux de dentition
 Jeux sensoriels
 Jeux éducatifs, Jeux de société, Puzzles
@@ -42,9 +42,9 @@ Livres
 Porteurs, Chariots et bascules
 29-Draisiennes, Tricycles
 
-Peluches et Doudous
+3-Peluches et Doudous
 
-Décoration
+4-Décoration
 Décoration murale
 Boites à musique, Mobiles
 Veilleuses, Luminaires
@@ -53,7 +53,7 @@ Rangement
 Petit mobilier
 Tapis
 
-Mode et accessoires
+5-Mode et accessoires
 Accessoires cheveux
 Bijoux
 Beauté/maquillage
@@ -62,7 +62,7 @@ Chaussons
 Sacs, Cartables et trousses
 Accessoires
 
-Cadeaux à personnaliser
+6-Cadeaux à personnaliser
 
 Carte cadeau
 

@@ -20,24 +20,30 @@ INNER JOIN marque ON produit.marque = marque.marque_id
 INNER JOIN photo ON produit.produit_id = photo.produit
 WHERE marque.marque_id = {$marque_id}";
 
+$sql_marque ="SELECT nom 
+FROM marque
+WHERE marque_id = {$marque_id}";
+
+
 $reponse = $bdd->query($sql);
+$reponse_marque  = $bdd->query($sql_marque);
 
 ?>
 
 <div class="row col-12">
-    <h2><?=MARQUE?></h2>
+   <?php $donnees_marque = $reponse_marque->fetch();?>
+   <h1 class="ml-5 mt-2"><?=$donnees_marque['nom']?></h1>
 </div>
 
-<div class="col-12 border d-flex flex-row flex-wrap">
+<div class="col-12 d-flex flex-row flex-wrap justify-content-around">
 <?php
 while ($donnees = $reponse->fetch()):
 ?>
-    <a class="col-3 border">
+    <a class="col-6 col-md-2 m-3 mb-2 border" style="text-decoration:none;" href="produit.php?id=<?= htmlentities($donnees['produit_id']) ?>">
     <div>
         <img class="img-fluid" src="<?= htmlentities($donnees['image']) ?>">
-        <p><?= htmlentities($donnees['nom'])?></p>
-        <p><?=htmlentities($donnees['prix'])." €" ?></p>
-        <p><?= htmlentities($donnees['marque']) ?></p>
+        <p class="text-secondary"><b><?= htmlentities($donnees['nom'])." - ".htmlentities($donnees['marque'])?></b></p>
+        <p class="text-secondary"><h4 style="color:#303030"><?=htmlentities($donnees['prix'])." €" ?></h4></p>
     </div>
     </a>
     
