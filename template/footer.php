@@ -1,3 +1,4 @@
+
         <div id="footer" class="container-fluid">
             <!-- Reseaux sociaux sur mobile uniquement -->
             <div class="row text-center mt-4 mb-2">
@@ -22,9 +23,9 @@
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
                         <li class="text-uppercase">A propos de nous</li>
-                        <li><a  class="text-secondary" href="/">Qui sommes-nous ?</a></li>
-                        <li><a class="text-secondary" href="/">Conditions Générales de vente</a></li>
-                        <li><a class="text-secondary" href="/">Politique de confidentialité</a></li>
+                        <li><a  class="text-secondary" href="../public/qui-sommes-nous.php">Qui sommes-nous ?</a></li>
+                        <li><a class="text-secondary" href="../public/cond-gen-de-vente.php">Conditions Générales de vente</a></li>
+                        <li><a class="text-secondary" href="../public/pol-de-confidentialite.php">Politique de confidentialité</a></li>
                     </ul>
                 </div>
 
