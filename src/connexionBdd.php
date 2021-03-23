@@ -7,6 +7,7 @@
 	 //On essaie de se connecter
 	try{
 		$bdd = new PDO("mysql:host=$serverBDD;dbname=$dbBDD", $userBDD, $passBDD);
+		$bdd->exec('SET NAMES utf8mb4');
 		//On définit le mode d'erreur de PDO sur Exception
 		$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		//echo "Connexion reussie";
