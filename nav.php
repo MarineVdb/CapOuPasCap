@@ -5,6 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!--Barre de recherche uniquement sur mobile-->
         <div class="d-md-none navbar-brand input-group rounded col-8 col-md-5 order-md-2 mt-2 mb-2 mb-lg-0 d-flex">
                 <input class="form-control  rounded" type="search" placeholder="Que recherchez vous ?" aria-label="Search">
                 <button class="input-group-text border-0" id="search-addon"> <i class="fas fa-search"></i></button>

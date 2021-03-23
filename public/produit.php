@@ -4,7 +4,8 @@
 if(isset($_GET) && isset($_GET['id'])){
     $id = intval($_GET['id']);
     require_once '../src/connexionBdd.php';
-    $sql = "SELECT produit_id, produit.nom, produit.`description`, prix, dimension_largeur, dimension_longueur,dimension_hauteur,poids, marque.nom AS marque, categorie.nom AS categorie, photo.image 
+    $sql = "SELECT produit_id, produit.nom, produit.`description`, prix, dimension_largeur, dimension_longueur,dimension_hauteur,poids, 
+            marque.nom AS marque, categorie.nom AS categorie, photo.image 
             FROM produit 
             INNER JOIN photo ON produit.produit_id = photo.produit 
             INNER JOIN marque ON produit.marque = marque.marque_id
