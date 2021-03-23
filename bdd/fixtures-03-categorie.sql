@@ -1,29 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 20, 2021 at 08:57 AM
--- Server version: 8.0.18
--- PHP Version: 7.4.0
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `copc`
---
-
--- --------------------------------------------------------
-
 INSERT INTO `categorie` (`categorie_id`, `nom`, `categorie`) VALUES
 (1, 'Puériculture', NULL),
 (2, 'Eveil et Jeux', NULL),
@@ -49,19 +23,23 @@ INSERT INTO `categorie` (`categorie_id`, `nom`, `categorie`) VALUES
 (22, 'Jeux de bain', 2),
 (23, 'Loisirs créatifs', 2),
 (24, 'Garages, Voitures', 2),
-(25, 'Poupées, Poupons', 2);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `categorie`
---
-ALTER TABLE `categorie`
-  ADD CONSTRAINT `categorie_ibfk_1` FOREIGN KEY (`categorie`) REFERENCES `categorie` (`categorie_id`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+(25, 'Poupées, Poupons', 2),
+(26, 'Instruments de musique', 2),
+(27, 'Livres', 2),
+(28, 'Porteurs, Chariots et bascules', 2),
+(29, 'Draisiennes, Tricycles', 2),
+(30, 'Draisiennes, Tricycles', 2),
+(31, 'Décoration murale', 4),
+(32, 'Boites à musique, Mobiles', 4),
+(33, 'Veilleuses, Luminaires', 4),
+(34, 'Coussins', 4),
+(35, 'Rangement', 4),
+(36, 'Petit mobilier', 4),
+(37, 'Tapis', 4),
+(38, 'Accessoires cheveux', 5),
+(39, 'Bijoux', 5),
+(40, 'Beauté/maquillage', 5),
+(41, 'Lunettes de soleil', 5),
+(42, 'Chaussons', 5),
+(43, 'Sacs, Cartables et trousses', 5),
+(44, 'Accessoires', 5);
