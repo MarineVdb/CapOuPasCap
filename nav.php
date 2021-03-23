@@ -1,3 +1,12 @@
+<?php
+
+require_once 'src/connexionBdd.php';
+
+// liste des marques
+$sql = 'SELECT * FROM marque';
+$reponse = $bdd->query($sql);
+
+?>
 <div class="container-fluid p-0">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white mt-2 mt-lg-0 border">
@@ -21,9 +30,13 @@
                 Marques
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Janod</a>
-                <a class="dropdown-item" href="#">Mini-Kane</a>
-                <a class="dropdown-item" href="#">Moulin Roty</a>
+                <?php
+                while ($donnees = $reponse->fetch()):
+                ?>
+                    <a class="dropdown-item" href="produits-marque.php?marque_id=<?= htmlentities($donnees['marque_id']) ?>" data-description="<?= htmlentities($donnees['description']) ?>" ><?= htmlentities($donnees['nom']) ?></a>
+                <?php
+                endwhile;
+                ?>
                 </div>
             </li>
 
