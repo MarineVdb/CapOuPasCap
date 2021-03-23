@@ -1,4 +1,4 @@
-CREATE TABLE Utilisateur(
+CREATE TABLE utilisateur(
 	utilisateur_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100),
 	prenom VARCHAR(100),
@@ -12,18 +12,18 @@ CREATE TABLE Utilisateur(
 	code_postal VARCHAR(100)	
 );
 
-CREATE TABLE Taille_vetement(
+CREATE TABLE taille_vetement(
 	taille_vetement_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL DEFAULT 'M'
 );	
 
-CREATE TABLE Marque(
+CREATE TABLE marque(
 	marque_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	description TEXT
 );
 
-CREATE TABLE Categorie(
+CREATE TABLE categorie(
 	categorie_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	categorie INT,
@@ -31,7 +31,7 @@ CREATE TABLE Categorie(
 );
 
 
-CREATE TABLE Produit(
+CREATE TABLE produit(
 	produit_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	description TEXT,
@@ -52,7 +52,7 @@ CREATE TABLE Produit(
 );
 
 
-CREATE TABLE Photo(
+CREATE TABLE photo(
 	photo_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	image VARCHAR(100) NOT NULL,
 	description TEXT,
@@ -62,7 +62,7 @@ CREATE TABLE Photo(
 );
 
 
-CREATE TABLE Commande_entete(
+CREATE TABLE commande_entete(
 	commande_entete_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	date_creation DATETIME NOT NULL,
         utilisateur INT, 
@@ -71,7 +71,7 @@ CREATE TABLE Commande_entete(
 
 
 
-CREATE TABLE Commande_detail(
+CREATE TABLE commande_detail(
 	commande_detail_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	quantite INT NOT NULL,
 	prix FLOAT NOT NULL,
