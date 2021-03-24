@@ -32,7 +32,7 @@ if(isset($_GET) && isset($_GET['id'])){
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb" style="background-color:white;">
                     <li class="breadcrumb-item"><a href="index.php" class="text-secondary" style="font-weight:bold;">Accueil</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-secondary" style="font-weight:bold;"><?=$categorie?></a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-secondary" style="font-weight:bold;"><?=htmlentities($categorie)?></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?=$nom?></li>
                 </ol>
             </nav>
@@ -41,12 +41,12 @@ if(isset($_GET) && isset($_GET['id'])){
             <div class="row col-12">
                 <!-- Image du produit -->
                 <div class="col-12 col-md-6 d-flex justify-content-center">
-                        <img src="<?= $image ?>" alt="Photo du produit" class="img-fluid">
+                        <img src="<?= htmlentities($image) ?>" alt="Photo du produit" class="img-fluid">
                 </div>
                 
                 <!-- Description du produit -->
                 <div class="col-12 col-md-6 pt-5">
-                    <h3 class="ml-3"> <?=$nom." - ".$marque?></h3>
+                    <h3 class="ml-3"> <?=htmlentities($nom)." - ".htmlentities($marque)?></h3>
 
                     <select class="form-select ml-3 col-6 col-md-3 mt-3 mt-md-5" aria-label="Disabled select example" disabled>
                         <option selected>Taille</option>
@@ -55,7 +55,7 @@ if(isset($_GET) && isset($_GET['id'])){
                         <option value="3">L</option>
                     </select>
 
-                    <h2 class="ml-3 mt-3 mt-md-5" style="color:#006f86"> <?=$prix." €"?> </h2>
+                    <h2 class="ml-3 mt-3 mt-md-5" style="color:#006f86"> <?=htmlentities($prix)." €"?> </h2>
                     
                      <!--Quantité -->
                     <label for="quantite" class="ml-3 mt-3">Quantité </label>    
@@ -97,15 +97,14 @@ if(isset($_GET) && isset($_GET['id'])){
                                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><?=$donnees['description']?></div>
                                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                             <ul>
-                                                <li>Longueur : <?= $longueur.' cm'; ?> </li>
-                                                <li>Largeur : <?= $largeur.' cm'; ?> </li>
-                                                <li>Hauteur : <?= $hauteur.' cm'; ?> </li>
-                                                <li>Poids : <?= $poids.' kg'; ?> </li>
+                                                <li>Longueur : <?= htmlentities($longueur).' cm'; ?> </li>
+                                                <li>Largeur : <?= htmlentities($largeur).' cm'; ?> </li>
+                                                <li>Hauteur : <?= htmlentities($hauteur).' cm'; ?> </li>
+                                                <li>Poids : <?= htmlentities($poids).' kg'; ?> </li>
                                             </ul>
                                         </div>
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Le produit est à venir retirer en magasin</div>
                             </div>
-                   
                 </div>
             </div>
         <?php    
