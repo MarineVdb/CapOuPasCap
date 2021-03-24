@@ -55,7 +55,7 @@ $reponse = $bdd->query($sql);
                     $sous_categorie1 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=1');
                     while ($donnees_sous_categorie1 = $sous_categorie1->fetch()):
                     ?>
-                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie1['categorie_id']) ?>"><?= $donnees_sous_categorie1['nom']?></a>
+                        <a class="dropdown-item" href="produit-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie1['categorie_id']) ?>"><?= $donnees_sous_categorie1['nom']?></a>
                     <?php
                     endwhile;
                     ?>
@@ -76,7 +76,7 @@ $reponse = $bdd->query($sql);
                     $sous_categorie2 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=2');
                     while ($donnees_sous_categorie2 = $sous_categorie2->fetch()):
                     ?>
-                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie2['categorie_id']) ?>"><?= $donnees_sous_categorie2['nom']?></a>
+                        <a class="dropdown-item" href="produit-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie2['categorie_id']) ?>"><?= $donnees_sous_categorie2['nom']?></a>
                     <?php
                     endwhile;
                     ?>
@@ -110,7 +110,7 @@ $reponse = $bdd->query($sql);
                     $sous_categorie4 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=4');
                     while ($donnees_sous_categorie4 = $sous_categorie4->fetch()):
                     ?>
-                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie4['categorie_id']) ?>"><?= $donnees_sous_categorie4['nom']?></a>
+                        <a class="dropdown-item" href="produit-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie4['categorie_id']) ?>"><?= $donnees_sous_categorie4['nom']?></a>
                     <?php
                     endwhile;
                     ?>
@@ -132,7 +132,7 @@ $reponse = $bdd->query($sql);
                     $sous_categorie5 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=5');
                     while ($donnees_sous_categorie5 = $sous_categorie5->fetch()):
                     ?>
-                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie5['categorie_id']) ?>"><?= $donnees_sous_categorie5['nom']?></a>
+                        <a class="dropdown-item" href="produit-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie5['categorie_id']) ?>"><?= $donnees_sous_categorie5['nom']?></a>
                     <?php
                     endwhile;
                     ?>

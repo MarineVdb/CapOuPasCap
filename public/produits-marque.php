@@ -43,7 +43,7 @@ while ($donnees = $reponse->fetch()):
     <div>
         <img class="img-fluid" src="<?= htmlentities($donnees['image']) ?>">
         <p class="text-secondary"><b><?= htmlentities($donnees['nom'])." - ".htmlentities($donnees['marque'])?></b></p>
-        <p class="text-secondary"><h4 style="color:#303030"><?=htmlentities($donnees['prix'])." €" ?></h4></p>
+        <p class="text-secondary"><h4 style="color:#303030"><?=number_format(htmlentities($donnees['prix']),2)." €" ?></h4></p>
     </div>
     </a>
     
@@ -55,3 +55,5 @@ endwhile;
 <?php
 
 require_once '../template/footer.php';
+
+
