@@ -5,8 +5,8 @@ require_once '../src/connexionBdd.php';
 // liste des marques
 $sql = 'SELECT * FROM marque';
 $reponse = $bdd->query($sql);
-
 ?>
+
 <div class="container-fluid p-0">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white mt-2 mt-lg-0 border">
@@ -40,88 +40,114 @@ $reponse = $bdd->query($sql);
                 </div>
             </li>
 
+            <!-- Catégorie 1 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?php 
+                    //On récupère le nom de la catégorie 1 dans la BDD 
+                    $categorie_1 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 1");
+                    $donnees_categorie_1 = $categorie_1->fetch();
+                    echo htmlentities($donnees_categorie_1['nom'])
+                    ?> 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <?php
+                    $sous_categorie1 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=1');
+                    while ($donnees_sous_categorie1 = $sous_categorie1->fetch()):
+                    ?>
+                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie1['categorie_id']) ?>"><?= $donnees_sous_categorie1['nom']?></a>
+                    <?php
+                    endwhile;
+                    ?>
+                </div>
+            </li>
+
             <!-- Catégorie 2 -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Puériculture
+                    <?php 
+                    $categorie_2 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 2");
+                    $donnees_categorie_2 = $categorie_2->fetch();
+                    echo htmlentities($donnees_categorie_2['nom'])
+                    ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Bavoirs et Langes</a>
-                <a class="dropdown-item" href="#">Couvertures et plaids</a>
-                <a class="dropdown-item" href="#">Linge de lit</a>
-                <a class="dropdown-item" href="#">Protège-carnets de santé</a>
-                <a class="dropdown-item" href="#">Repas</a>
-                <a class="dropdown-item" href="#">Sacs à langer, Sacs week-end</a>
-                <a class="dropdown-item" href="#">Sortie de bain</a>
-                <a class="dropdown-item" href="#">Tétines et attaches-tétines</a>
-                <a class="dropdown-item" href="#">Toilette et soins de bébé</a>
-            
+                    <?php
+                    $sous_categorie2 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=2');
+                    while ($donnees_sous_categorie2 = $sous_categorie2->fetch()):
+                    ?>
+                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie2['categorie_id']) ?>"><?= $donnees_sous_categorie2['nom']?></a>
+                    <?php
+                    endwhile;
+                    ?>
                 </div>
             </li>
+
 
             <!-- Catégorie 3 -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Eveil et Jeux
+            <li class="nav-item">
+                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                    <?php 
+                    $categorie_3 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 3");
+                    $donnees_categorie_3 = $categorie_3->fetch();
+                    echo htmlentities($donnees_categorie_3['nom'])
+                    ?>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Draisiennes, Tricycles</a>
-                <a class="dropdown-item" href="#">Hochets, Anneaux de dentition</a>
-                <a class="dropdown-item" href="#">Garages, Voitures</a>
-                <a class="dropdown-item" href="#">Instruments de musique</a>
-                <a class="dropdown-item" href="#">Jeux sensoriels</a>
-                <a class="dropdown-item" href="#">Jeux éducatifs, jeux de société, puzzles</a>
-                <a class="dropdown-item" href="#">Jeux d'imitation</a>
-                <a class="dropdown-item" href="#">Jeux de bain</a>
-                <a class="dropdown-item" href="#">Jouets en bois</a>
-                <a class="dropdown-item" href="#">Livres</a>
-                <a class="dropdown-item" href="#">Loisirs créatifs</a>
-                <a class="dropdown-item" href="#">Poupées, Poupons</a>
-                <a class="dropdown-item" href="#">Porteurs, chariots et bascules</a>
-                </div>
             </li>
 
-
             <!-- Catégorie 4 -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">Peluches et doudous</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?php 
+                    $categorie_4 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 4");
+                    $donnees_categorie_4 = $categorie_4->fetch();
+                    echo htmlentities($donnees_categorie_4['nom'])
+                    ?>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <?php
+                    $sous_categorie4 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=4');
+                    while ($donnees_sous_categorie4 = $sous_categorie4->fetch()):
+                    ?>
+                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie4['categorie_id']) ?>"><?= $donnees_sous_categorie4['nom']?></a>
+                    <?php
+                    endwhile;
+                    ?>
+
+                </div>
             </li>
 
             <!-- Catégorie 5 -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Décoration
+                    <?php 
+                    $categorie_5 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 5");
+                    $donnees_categorie_5 = $categorie_5->fetch();
+                    echo htmlentities($donnees_categorie_5['nom'])
+                    ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Boîtes à musique, Mobiles</a>
-                <a class="dropdown-item" href="#">Coussins</a>
-                <a class="dropdown-item" href="#">Décoration murale</a>
-                <a class="dropdown-item" href="#">Petit mobilier</a>
-                <a class="dropdown-item" href="#">Rangement</a>
-                <a class="dropdown-item" href="#">Tapis</a>
-                <a class="dropdown-item" href="#">Veilleuses, Luminaires</a>
+                    <?php
+                    $sous_categorie5 = $bdd->query('SELECT * FROM `categorie` WHERE `categorie`=5');
+                    while ($donnees_sous_categorie5 = $sous_categorie5->fetch()):
+                    ?>
+                        <a class="dropdown-item" href="produits-categorie.php?categorie_id=<?= htmlentities($donnees_sous_categorie5['categorie_id']) ?>"><?= $donnees_sous_categorie5['nom']?></a>
+                    <?php
+                    endwhile;
+                    ?>
                 </div>
             </li>
 
-            <!-- Catégorie 6 -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mode et Accessoires
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Accessoires</a>
-                <a class="dropdown-item" href="#">Accessoires cheveux</a>
-                <a class="dropdown-item" href="#">Beauté, Maquillage</a>
-                <a class="dropdown-item" href="#">Bijoux</a>
-                <a class="dropdown-item" href="#">Chaussons</a>
-                <a class="dropdown-item" href="#">Lunettes de soleil</a>
-                <a class="dropdown-item" href="#">Sacs, Cartables, trousses</a>
-                </div>
-            </li>
-
-            <!-- Catégorie 7-->
+            <!-- Catégorie 6-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Cadeaux à personnaliser</a>
+                <a class="nav-link" href="#">
+                    <?php 
+                    $categorie_6 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 6");
+                    $donnees_categorie_6 = $categorie_6->fetch();
+                    echo htmlentities($donnees_categorie_6['nom'])
+                    ?>
+                </a>
             </li>
 
             </ul>
