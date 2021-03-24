@@ -38,7 +38,7 @@
                 $erreur = "Cette adresse email est déjà utilisée";
             } else {
                 //On crypte le mot de passe
-                $mdp = hash('sha256', $mdp);
+                $mdp = password_hash($mdp, PASSWORD_DEFAULT);
                 
                 //On écrit les données dans la BDD 
                 $sql = $bdd->prepare("INSERT INTO utilisateur(nom, prenom, email, `role`,  mot_de_passe, tel, adresse1, adresse2, localite, code_postal) 
