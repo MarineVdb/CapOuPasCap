@@ -33,8 +33,8 @@
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
                         <li class="text-uppercase">Services</li>
-                        <li><a class="text-secondary" href="/">Carte cadeau</a></li>
-                        <li><a  class="text-secondary" href="/">Click & Collect</a></li>
+                        <li><a class="text-secondary" href="#">Carte cadeau</a></li>
+                        <li><a  class="text-secondary" href="#">Click & Collect</a></li>
                     </ul>
                 </div>
 
@@ -42,10 +42,10 @@
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
                         <li class="text-uppercase">Commander en ligne</li>
-                        <li><a class="text-secondary" href="/">Commande</a></li>
-                        <li><a class="text-secondary" href="/">Livraison</a></li>
-                        <li><a class="text-secondary" href="/">Retours</a></li>
-                        <li><a class="text-secondary" href="/">Paiement</a></li>
+                        <li><a class="text-secondary" href="#">Commande</a></li>
+                        <li><a class="text-secondary" href="#">Livraison</a></li>
+                        <li><a class="text-secondary" href="#">Retours</a></li>
+                        <li><a class="text-secondary" href="#">Paiement</a></li>
 
                     </ul>
                 </div>
@@ -54,9 +54,9 @@
                 <div class="col-12 col-md-2">
                     <ul class="list-unstyled">
                         <li class="text-uppercase">Aide et Contact</li>
-                        <li><a class="text-secondary" href="/">Notre boutique</a></li>
-                        <li><a class="text-secondary" href="/">Contactez-nous</a></li>
-                        <li><a class="text-secondary" href="/">FAQ</a></li>
+                        <li><a class="text-secondary" href="#">Notre boutique</a></li>
+                        <li><a class="text-secondary" href="#">Contactez-nous</a></li>
+                        <li><a class="text-secondary" href="#">FAQ</a></li>
                     </ul>
                 </div>
 
