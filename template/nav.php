@@ -86,10 +86,12 @@ $reponse = $bdd->query($sql);
 
             <!-- Catégorie 3 -->
             <li class="nav-item">
-                <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                <?php 
+                $categorie_3 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 3");
+                $donnees_categorie_3 = $categorie_3->fetch();
+                ?>
+                <a class="nav-link" href="produit-categorie.php?categorie_id=3" aria-haspopup="true" aria-expanded="false">
                     <?php 
-                    $categorie_3 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 3");
-                    $donnees_categorie_3 = $categorie_3->fetch();
                     echo htmlentities($donnees_categorie_3['nom'])
                     ?>
                 </a>
@@ -141,12 +143,12 @@ $reponse = $bdd->query($sql);
 
             <!-- Catégorie 6-->
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <?php 
+                    <?php
                     $categorie_6 = $bdd->query("SELECT * FROM `categorie` WHERE `categorie_id` = 6");
                     $donnees_categorie_6 = $categorie_6->fetch();
-                    echo htmlentities($donnees_categorie_6['nom'])
                     ?>
+                <a class="nav-link" href="produit-categorie.php?categorie_id=6">
+                    <?php echo htmlentities($donnees_categorie_6['nom'])?>
                 </a>
             </li>
 
